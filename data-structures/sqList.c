@@ -2,31 +2,6 @@
 #include <stdlib.h>
 #include "list.h"
 
-void insertElem(Sqlist * const, int);
-int doInsertElem(Sqlist * const, int, int);
-int deleteElem(Sqlist * const, int, int * const);
-void initList(Sqlist * const);
-int getElem(const Sqlist * const, int, int * const);
-void printList(const Sqlist *);
-
-int main(void) {
-	Sqlist *list = (Sqlist *)malloc(sizeof(Sqlist));
-	initList(list);
-	insertElem(list, 2);
-	insertElem(list, 8);
-	insertElem(list, 5);
-	insertElem(list, 3);
-	int a;
-	deleteElem(list, 2, &a);
-	printf("after deleteElem a: %d\n", a);
-	getElem(list, 2, &a);
-	printf("after getElem a: %d\n", a);
-	puts("print list:");
-	printList(list);
-	free(list);
-	getchar();
-}
-
 //返回第一个比x大的下标
 int findElem(const Sqlist *list, int e) {
 	int i;

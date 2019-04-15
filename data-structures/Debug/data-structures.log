@@ -1,2 +1,4 @@
-﻿  sqList.c
+﻿  test.c
+c:\project\c\data-structures\data-structures\test.c(38): warning C4047: “函数”:“LNode *”与“LNode **”的间接级别不同
+c:\project\c\data-structures\data-structures\test.c(38): warning C4024: “merge”: 形参和实参 3 的类型不同
   data-structures.vcxproj -> C:\project\c\data-structures\Debug\data-structures.exe
