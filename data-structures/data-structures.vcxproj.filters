@@ -18,10 +18,24 @@
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="data-structures.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sqList.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lList.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlList.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -116,9 +116,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="list.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="data-structures.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dlList.c" />
+    <ClCompile Include="lList.c" />
+    <ClCompile Include="sqList.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
