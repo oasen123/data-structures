@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "list.h"
+#include "stack.h"
 
 int main(void) {
 	//Ë³Ðò±í
@@ -41,18 +42,30 @@ int main(void) {
 	//printLList(*ell);
 
 	//Ë«Á´±í
-	int a[3] = { 1,4,6 };
-	DLNode c;
-	DLNode *cl = &c;
-	DLNode **cll = &cl;
-	createDlistR(cll, a, 3);
-	printDLList(*cll);
-	printf("DLLIST LENGTH: %d\n", getDLLength(*cll));
-	printf("INSERT: %d\n", insertDLElem(*cll, 1, 2));
-	printDLList(*cll);
-	printf("DELETE: %d\n", deleteDLPElem(*cll, 4));
-	printDLList(*cll);
-	printf("DELETE: %d\n", deleteDLElem(*cll, 2));
-	printDLList(*cll);
+	//int a[3] = { 1,4,6 };
+	//DLNode c;
+	//DLNode *cl = &c;
+	//DLNode **cll = &cl;
+	//createDlistR(cll, a, 3);
+	//printDLList(*cll);
+	//printf("DLLIST LENGTH: %d\n", getDLLength(*cll));
+	//printf("INSERT: %d\n", insertDLElem(*cll, 1, 2));
+	//printDLList(*cll);
+	//printf("DELETE: %d\n", deleteDLPElem(*cll, 4));
+	//printDLList(*cll);
+	//printf("DELETE: %d\n", deleteDLElem(*cll, 2));
+	//printDLList(*cll);
+
+	//Ë³ÐòÕ»
+	SqStack st;
+	initStack(&st);
+	printSqStack(&st);
+	push(&st, 0);
+	push(&st, 1);
+	printSqStack(&st);
+	int a;
+	pop(&st, &a);
+	printSqStack(&st);
+	printf("%d", a);
 	getchar();
 }
