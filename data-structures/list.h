@@ -33,3 +33,14 @@ void createlistR(LNode **, int[], int);
 void createlistL(LNode **, int[], int);
 int findAndDelete(LNode *, int);
 void printLList(const LNode *);
+
+//Ë«Á´±í
+void createDlistR(DLNode **, int[], int);
+DLNode * findDLNode(DLNode *, int);
+DLNode * findDLPNode(DLNode *, int);
+DLNode * findDLTail(DLNode *);
+int getDLLength(const DLNode *);
+int insertDLElem(const DLNode *, int, int);
+int deleteDLPElem(DLNode *, int);
+int deleteDLElem(DLNode *, int);
+void printDLList(DLNode *);

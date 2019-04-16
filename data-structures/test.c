@@ -20,25 +20,39 @@ int main(void) {
 	//free(list);
 
 	//µ¥Á´±í
-	int a[3] = { 1,4,6 };
-	int b[3] = { 2,5,7 };
-	LNode c;
-	LNode *cl = &c;
-	LNode **cll = &cl;
-	createlistR(cll, a, 3);
-	printLList(*cll);
-	LNode d;
-	LNode *dl = &d;
-	LNode **dll = &dl;
-	createlistR(dll, b, 3);
-	printLList(*dll);
-	LNode e;
-	LNode *el = &e;
-	LNode **ell = &el;
-	merge(*cll, *dll, ell);
-	printLList(*ell);
-	findAndDelete(*ell, 4);
-	printLList(*ell);
+	//int a[3] = { 1,4,6 };
+	//int b[3] = { 2,5,7 };
+	//LNode c;
+	//LNode *cl = &c;
+	//LNode **cll = &cl;
+	//createlistR(cll, a, 3);
+	//printLList(*cll);
+	//LNode d;
+	//LNode *dl = &d;
+	//LNode **dll = &dl;
+	//createlistR(dll, b, 3);
+	//printLList(*dll);
+	//LNode e;
+	//LNode *el = &e;
+	//LNode **ell = &el;
+	//merge(*cll, *dll, ell);
+	//printLList(*ell);
+	//findAndDelete(*ell, 4);
+	//printLList(*ell);
 
+	//Ë«Á´±í
+	int a[3] = { 1,4,6 };
+	DLNode c;
+	DLNode *cl = &c;
+	DLNode **cll = &cl;
+	createDlistR(cll, a, 3);
+	printDLList(*cll);
+	printf("DLLIST LENGTH: %d\n", getDLLength(*cll));
+	printf("INSERT: %d\n", insertDLElem(*cll, 1, 2));
+	printDLList(*cll);
+	printf("DELETE: %d\n", deleteDLPElem(*cll, 4));
+	printDLList(*cll);
+	printf("DELETE: %d\n", deleteDLElem(*cll, 2));
+	printDLList(*cll);
 	getchar();
 }
